@@ -4,48 +4,71 @@
     <title>Student Information Page</title>
     <style>
         body {
-            background-color: #e6e6e6;
+            background-color: #dcdcdc;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             text-align: center;
         }
 
-        .header {
-            background-color: white;
+        .top-header {
+            background-color: #f2f2f2;
             padding: 15px;
-            border-bottom: 4px solid blue;
+            border-bottom: 3px solid blue;
         }
 
-        .header h1 {
-            color: blue;
-            margin: 5px;
+        .top-header h1 {
+            color: #1a33cc;
+            font-size: 40px;
+            margin: 5px 0;
         }
 
-        .subtitle {
+        .address {
+            font-size: 16px;
+        }
+
+        .welcome-bar {
             background-color: yellow;
             padding: 5px;
             font-weight: bold;
+            width: 400px;
+            margin: 5px auto;
         }
 
-        .container {
-            margin: 30px auto;
+        .page-title {
+            display: inline-block;
+            border: 2px solid red;
+            padding: 8px 20px;
+            margin-top: 30px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #1a33cc;
+            background-color: white;
+        }
+
+        .main-box {
             width: 700px;
+            margin: 20px auto;
             border: 3px solid blue;
             padding: 15px;
-            background-color: #f9f9f9;
+            background-color: #eeeeff;
         }
 
-        .student-info {
+        .content {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
         }
 
-        .student-info img {
-            width: 180px;
-            height: 220px;
-            object-fit: cover;
-            border: 2px solid black;
+        .photo {
             margin-right: 20px;
+        }
+
+        .photo img {
+            width: 200px;
+            height: 230px;
+            object-fit: cover;
+            border: 3px solid black;
         }
 
         table {
@@ -56,67 +79,67 @@
         td {
             border: 2px solid blue;
             padding: 8px;
-            text-align: center;
+            background-color: #f8f8ff;
         }
 
-        .title-box {
-            display: inline-block;
-            padding: 10px 20px;
-            border: 2px solid red;
-            margin-top: 20px;
-            background-color: white;
-            font-size: 20px;
+        .label {
             font-weight: bold;
-            color: blue;
+            background-color: #e0e0ff;
         }
 
         .footer {
-            margin-top: 20px;
+            margin-top: 30px;
             color: red;
             font-style: italic;
+            text-align: right;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="header">
+    <div class="top-header">
         <h1>Notre Dame of Kidapawan College</h1>
-        <div>Datu Ingkal St., Kidapawan City, Cotabato</div>
-        <div class="subtitle">This is my created site welcome</div>
+        <div class="address">Datu Ingkal St., Kidapawan City, Cotabato</div>
+        <div class="welcome-bar">This is my created site welcome</div>
     </div>
 
-    <div class="title-box">
+    <div class="page-title">
         Student Information Page
     </div>
 
-    <div class="container">
-        <div class="student-info">
-            <img src="yourphoto.jpg" alt="Student Photo">
+    <div class="main-box">
+        <div class="content">
+            <div class="photo">
+                <img src="yourphoto.jpg" alt="Student Photo">
+            </div>
 
             <table>
                 <tr>
-                    <td><b>LAST NAME</b></td>
+                    <td class="label">LAST NAME</td>
                     <td>NICOR</td>
                 </tr>
                 <tr>
-                    <td><b>FIRST NAME</b></td>
+                    <td class="label">FIRST NAME</td>
                     <td>Rorein Johnson</td>
                 </tr>
                 <tr>
-                    <td><b>MIDDLE NAME</b></td>
+                    <td class="label">MIDDLE NAME</td>
                     <td>Mendoza</td>
                 </tr>
                 <tr>
-                    <td><b>COURSE</b></td>
+                    <td class="label">COURSE</td>
                     <td>BS Information Technology</td>
                 </tr>
                 <tr>
-                    <td><b>YEAR</b></td>
+                    <td class="label">YEAR</td>
                     <td>2nd</td>
                 </tr>
                 <tr>
-                    <td><b>ID NO.</b></td>
+                    <td class="label">ID NO.</td>
                     <td>2024-031</td>
                 </tr>
             </table>
@@ -124,7 +147,7 @@
     </div>
 
     <div class="footer">
-        Powered by: Nightfall_59™
+        Powered by: Github™
     </div>
 
 </body>
